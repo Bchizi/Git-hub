@@ -15,7 +15,7 @@ export class SearchComponent implements OnInit {
 
   constructor() { }
 
-  search(searchTerm){
+  search(){
     this.emitSearch.emit(this.searchTerm);
   }
 
