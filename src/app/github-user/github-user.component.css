@@ -2,11 +2,12 @@
     width: 380px;
     margin-top: 20px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 2px;
 }
 .container{
     background-color: #4baea0;
     border-radius: 20px;
+    margin-top: 20px;
 }
 p{
     font-size: medium;
