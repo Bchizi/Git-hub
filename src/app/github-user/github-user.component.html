@@ -1,0 +1,48 @@
+<div class="container">
+    <br>
+    <div class="jombotron">
+      <app-search (emitSearch)='search($event)'></app-search>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row" *ngIf='users'>
+            <div class="card" *ngFor='let user of users; let i = index'>
+              <div class="card-body">
+                <img src="{{user.picture}}" class="image-fluid rounded-circle w-50 mb-3"  alt="">
+                <h6><strong>{{user.name}}</strong> </h6>
+              </div>
+              <div class="card-footer">
+                <button><a href="{{user.score}}">Account</a></button>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+        <div class="col-md-6" *ngIf='repositories'>
+          
+            <div class="card"  *ngFor='let repository of repositories; let i = index'  >
+            <div class="card card-title">
+              <h3>{{repository.name}} </h3>
+              <hr>
+              <p>language:  {{repository.language}}</p>
+            </div>
+            <div class="card-body">
+              <p><link rel="stylesheet" href=""></p>
+              <p  appFontChanger >{{repository.description}}</p>
+              <br>
+              <p>By :{{repository.user}}</p>
+            </div>
+            <div class="card-footer">
+              <h2>Date-created:  {{repository.dateCreated |date }}</h2>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    
