@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DateCountPipe } from './date-count.pipe';
+import { FontChangerDirective } from './font-changer.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DateCountPipe } from './date-count.pipe';
     HomeComponent,
     SearchComponent,
     NotFoundComponent,
-    DateCountPipe
+    DateCountPipe,
+    FontChangerDirective
   ],
   imports: [
     BrowserModule,
