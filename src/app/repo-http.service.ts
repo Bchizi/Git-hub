@@ -11,7 +11,7 @@ export class RepoHttpService {
 
   searchRepo(searchTerm:string){
     
-    let searchEndpoint= `https://api.github.com/search/repositories?access_token=${environment.aUrl}&q=${searchTerm}&sort=star&order=desc`;
+    let searchEndpoint= `https://api.github.com/search/repositories?access_token=${environment.akey}&q=${searchTerm}&sort=star&order=desc`;
     let promise =  new Promise((resolve, reject)=>{
         this.http.get(searchEndpoint).toPromise().then(
           (results)=>{

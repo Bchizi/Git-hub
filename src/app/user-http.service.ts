@@ -14,7 +14,7 @@ export class UserHttpService {
   
   searchUser(searchTerm:string){
 
-    let searchEndpoint= `https://api.github.com/search/users?access_token=${environment.aUrl}&q=${searchTerm}+repos:repos:%3E10`;
+    let searchEndpoint= `https://api.github.com/search/users?access_token=${environment.akey}&q=${searchTerm}+repos:repos:%3E10`;
     let promise =  new Promise((resolve, reject)=>{
         this.http.get(searchEndpoint).toPromise().then(
           (userResults)=>{
