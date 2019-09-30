@@ -5,7 +5,9 @@
     border-radius: 25px;
 }
 .container{
-    background-image: url(/src/assets/background.jpg);
+    background-image: url(https://w.wallhaven.cc/full/95/wallhaven-956q2x.jpg);
+        background-repeat: no-repeat;
+    
 }
 p{
     font-size: medium;
