@@ -16,7 +16,7 @@ repositories: Repository[];
   constructor(public repoHttpService:RepoHttpService, public userHttpService:UserHttpService) { }
 
     ngOnInit() {
-        this.search("github");
+        this.search("leon");
         
     }
 
